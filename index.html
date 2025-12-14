@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Instagram Reels Hashtag Generator for Travel Creators</title>
+  <meta name="description" content="Free Instagram Reels hashtag generator for travel creators. Get the best travel hashtags to grow reach and engagement.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <h1>Instagram Reels Hashtag Generator for Travel Creators</h1>
+
+  <p>Generate the best Instagram Reels hashtags for travel content. Perfect for travel creators, vloggers, and influencers.</p>
+
+  <textarea id="keywords" placeholder="Enter travel keywords (e.g. bali beach sunset)"></textarea>
+  <br><br>
+
+  <button onclick="generateHashtags()">Generate Hashtags</button>
+
+  <p id="output"></p>
+
+  <script>
+    function generateHashtags() {
+      const input = document.getElementById("keywords").value;
+      if (!input) return;
+
+      let baseTags = [
+        "#travelreels","#travelgram","#instatravel","#wanderlust",
+        "#travelcreator","#travelvlog","#explore","#adventure",
+        "#traveldiaries","#reelitfeelit","#exploremore"
+      ];
+
+      let words = input.split(" ");
+      let result = words.map(w => "#" + w.toLowerCase());
+
+      let hashtags = result.concat(baseTags).slice(0, 30);
+      document.getElementById("output").innerText = hashtags.join(" ");
+    }
+  </script>
+</body>
+</html>

@@ -3,39 +3,186 @@
 <head>
   <meta charset="UTF-8">
   <title>Instagram Reels Hashtag Generator for Travel Creators</title>
-  <meta name="description" content="Free Instagram Reels hashtag generator for travel creators. Get the best travel hashtags to grow reach and engagement.">
+
+  <meta name="description" content="Free Instagram Reels hashtag generator for travel creators. Generate the best travel hashtags to grow reach and engagement on Instagram Reels.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    body {
+      background-color: #f0f8ff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .card {
+      background: #ffffff;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      margin-bottom: 30px;
+    }
+
+    h1, h2, h3 {
+      color: #0b4f6c;
+    }
+
+    textarea {
+      width: 100%;
+      height: 90px;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      background-color: #0b4f6c;
+      color: #ffffff;
+      border: none;
+      padding: 12px 20px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 10px;
+      margin-right: 10px;
+    }
+
+    button:hover {
+      background-color: #083d56;
+    }
+
+    .output {
+      margin-top: 15px;
+      background: #f9f9f9;
+      padding: 15px;
+      border-radius: 6px;
+      word-wrap: break-word;
+      font-size: 15px;
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 30px;
+    }
+
+    .links a {
+      color: #0b4f6c;
+      text-decoration: none;
+      margin: 0 8px;
+    }
+  </style>
 </head>
 
 <body>
-  <h1>Instagram Reels Hashtag Generator for Travel Creators</h1>
 
-  <p>Generate the best Instagram Reels hashtags for travel content. Perfect for travel creators, vloggers, and influencers.</p>
+<div class="container">
 
-  <textarea id="keywords" placeholder="Enter travel keywords (e.g. bali beach sunset)"></textarea>
-  <br><br>
+  <!-- TOOL -->
+  <div class="card">
+    <h1>Instagram Reels Hashtag Generator for Travel Creators</h1>
 
-  <button onclick="generateHashtags()">Generate Hashtags</button>
+    <p>
+      Generate optimized Instagram Reels hashtags for travel content.
+      Perfect for travel vloggers, creators, backpackers, and influencers.
+    </p>
 
-  <p id="output"></p>
+    <textarea id="keywords" placeholder="Enter travel keywords (example: bali beach sunset)"></textarea>
 
-  <script>
-    function generateHashtags() {
-      const input = document.getElementById("keywords").value;
-      if (!input) return;
+    <br>
+    <button onclick="generateHashtags()">Generate Hashtags</button>
+    <button onclick="copyHashtags()">Copy Hashtags</button>
 
-      let baseTags = [
-        "#travelreels","#travelgram","#instatravel","#wanderlust",
-        "#travelcreator","#travelvlog","#explore","#adventure",
-        "#traveldiaries","#reelitfeelit","#exploremore"
-      ];
+    <div id="output" class="output"></div>
+  </div>
 
-      let words = input.split(" ");
-      let result = words.map(w => "#" + w.toLowerCase());
+  <!-- SEO CONTENT -->
+  <div class="card">
+    <h2>Why Travel Hashtags Matter on Instagram Reels</h2>
+    <p>
+      Instagram Reels hashtags help your travel videos reach users who are
+      actively searching and exploring travel content. Using niche and relevant
+      hashtags increases discoverability and engagement.
+    </p>
 
-      let hashtags = result.concat(baseTags).slice(0, 30);
-      document.getElementById("output").innerText = hashtags.join(" ");
+    <h2>How Many Hashtags Should You Use on Reels?</h2>
+    <p>
+      In 2025, the recommended number of hashtags for Instagram Reels is
+      <strong>10 to 20 relevant hashtags</strong>. Avoid spammy or unrelated tags.
+    </p>
+
+    <h2>Who Should Use This Hashtag Generator?</h2>
+    <ul>
+      <li>Travel vloggers</li>
+      <li>Solo and budget travelers</li>
+      <li>Luxury travel creators</li>
+      <li>Tourism pages and travel brands</li>
+    </ul>
+
+    <p>
+      Enter your keywords, generate hashtags, copy them, and paste directly
+      into your Instagram Reel before posting.
+    </p>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="links">
+      <a href="#">Privacy Policy</a> |
+      <a href="#">Terms of Service</a> |
+      <a href="#">Contact</a>
+    </div>
+    <p>© 2025 Travel Reels Hashtag Generator</p>
+  </div>
+
+</div>
+
+<!-- SCRIPT -->
+<script>
+  function generateHashtags() {
+    const input = document.getElementById("keywords").value.trim();
+    const output = document.getElementById("output");
+
+    if (!input) {
+      output.innerText = "Please enter some travel keywords.";
+      return;
     }
-  </script>
+
+    const baseHashtags = [
+      "#travelreels", "#instatravel", "#travelgram", "#wanderlust",
+      "#travelcreator", "#travelvlog", "#exploretheworld", "#adventure",
+      "#traveldiaries", "#reelitfeelit", "#exploremore", "#vacationmode",
+      "#beautifuldestinations", "#travelinspiration"
+    ];
+
+    const keywordTags = input
+      .toLowerCase()
+      .split(" ")
+      .map(word => "#" + word.replace(/[^a-z0-9]/g, ""));
+
+    const hashtags = [...new Set([...keywordTags, ...baseHashtags])].slice(0, 30);
+
+    output.innerText = hashtags.join(" ");
+  }
+
+  function copyHashtags() {
+    const text = document.getElementById("output").innerText;
+    if (!text) return;
+
+    navigator.clipboard.writeText(text);
+    alert("Hashtags copied!");
+  }
+</script>
+
 </body>
 </html>

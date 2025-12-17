@@ -1,18 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+  <!-- Homepage -->
   <url>
     <loc>https://heroic-concha-6e674e.netlify.app/</loc>
     <priority>1.0</priority>
   </url>
 
+  <!-- Bali Travel Hashtags -->
   <url>
     <loc>https://heroic-concha-6e674e.netlify.app/bali-travel-hashtags.html</loc>
     <priority>0.8</priority>
   </url>
 
+  <!-- Thailand Travel Hashtags -->
   <url>
     <loc>https://heroic-concha-6e674e.netlify.app/thailand-travel-hashtags.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Solo Travel Hashtags -->
+  <url>
+    <loc>https://heroic-concha-6e674e.netlify.app/solo-travel-hashtags.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Beach Travel Hashtags -->
+  <url>
+    <loc>https://heroic-concha-6e674e.netlify.app/beach-travel-hashtags.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Budget Travel Hashtags -->
+  <url>
+    <loc>https://heroic-concha-6e674e.netlify.app/budget-travel-hashtags.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Couple Travel Hashtags -->
+  <url>
+    <loc>https://heroic-concha-6e674e.netlify.app/couple-travel-hashtags.html</loc>
     <priority>0.8</priority>
   </url>
 

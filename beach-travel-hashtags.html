@@ -2,38 +2,63 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Beach Travel Hashtags for Instagram</title>
-<meta name="description" content="Top beach travel hashtags for Instagram, Reels, and summer content.">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Beach Travel Hashtags for Instagram & Reels</title>
+<meta name="description" content="Trending beach travel hashtags for Instagram, Reels, and TikTok.">
 <link rel="canonical" href="https://heroic-concha-6e674e.netlify.app/beach-travel-hashtags.html">
+
 <style>
-body{margin:0;font-family:Arial,sans-serif;background:linear-gradient(180deg,#f7f9fc,#fff);color:#333}
-.container{max-width:900px;margin:auto;padding:40px 20px}
-footer{margin-top:60px;border-top:1px solid #ddd;padding:20px;text-align:center;font-size:14px}
-footer a{color:#2563eb;text-decoration:none;margin:0 6px}
+body { font-family: Arial; background: linear-gradient(180deg,#f7faff,#eef3ff); margin:0; }
+.container { max-width:900px; margin:auto; padding:20px; }
+.tool-box { background:#fff; padding:20px; border-radius:8px; margin:25px 0; }
+textarea { height:160px; width:100%; }
+input, button { width:100%; padding:12px; margin-top:10px; }
+button { background:#1a73e8; color:#fff; border:none; border-radius:5px; }
+footer { text-align:center; padding:20px; background:#fff; border-top:1px solid #ddd; }
+a { color:#1a3c6d; }
 </style>
 </head>
+
 <body>
-
 <div class="container">
-<p>← <a href="index.html">Back to Travel Hashtag Generator</a></p>
+<h1>Beach Travel Hashtag Generator</h1>
 
-<h1>Beach Travel Hashtags</h1>
-<p>Boost engagement on tropical and beach vacation photos.</p>
+<div class="tool-box">
+<input id="i" placeholder="e.g. Beach Travel">
+<button onclick="g()">Generate Hashtags</button>
+<textarea id="o" readonly></textarea>
+</div>
 
-<p><strong>Popular Beach Hashtags:</strong></p>
-<p>
-#beachvibes #beachlife #oceanview #tropicalvibes
-#summertravel #islandlife #vacationmode
-</p>
+<h2>Related Pages</h2>
+<ul>
+<li><a href="bali-travel-hashtags.html">Bali Travel Hashtags</a></li>
+<li><a href="thailand-travel-hashtags.html">Thailand Travel Hashtags</a></li>
+<li><a href="couple-travel-hashtags.html">Couple Travel Hashtags</a></li>
+</ul>
+
+<p><a href="index.html">← Back to Main Generator</a></p>
 </div>
 
 <footer>
 <a href="index.html">Home</a> |
 <a href="about.html">About</a> |
-<a href="privacy-policy.html">Privacy</a> |
+<a href="privacy-policy.html">Privacy Policy</a> |
 <a href="terms.html">Terms</a>
 </footer>
 
+<script>
+function g(){
+const v=i.value.trim();
+if(!v)return alert("Enter keyword");
+const k=v.toLowerCase().replace(/\s+/g,"");
+o.value=`#${k}
+#beachlife
+#oceanvibes
+#summertravel
+#beachreels
+#wanderlust`;
+}
+</script>
 </body>
 </html>

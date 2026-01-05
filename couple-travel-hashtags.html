@@ -2,38 +2,60 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Couple Travel Hashtags for Instagram</title>
-<meta name="description" content="Romantic couple travel hashtags for Instagram and Reels.">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Couple Travel Hashtags for Instagram</title>
+<meta name="description" content="Romantic couple travel hashtags for Instagram, honeymoon and vacations.">
 <link rel="canonical" href="https://heroic-concha-6e674e.netlify.app/couple-travel-hashtags.html">
+
 <style>
-body{margin:0;font-family:Arial,sans-serif;background:linear-gradient(180deg,#f7f9fc,#fff);color:#333}
-.container{max-width:900px;margin:auto;padding:40px 20px}
-footer{margin-top:60px;border-top:1px solid #ddd;padding:20px;text-align:center;font-size:14px}
-footer a{color:#2563eb;text-decoration:none;margin:0 6px}
+body{font-family:Arial;background:linear-gradient(180deg,#f7faff,#eef3ff);margin:0}
+.container{max-width:900px;margin:auto;padding:20px}
+.tool-box{background:#fff;padding:20px;border-radius:8px}
+textarea{height:160px;width:100%}
+input,button{width:100%;padding:12px;margin-top:10px}
+button{background:#1a73e8;color:#fff;border:none;border-radius:5px}
+footer{text-align:center;padding:20px;background:#fff;border-top:1px solid #ddd}
 </style>
 </head>
+
 <body>
-
 <div class="container">
-<p>← <a href="index.html">Back to Travel Hashtag Generator</a></p>
+<h1>Couple Travel Hashtag Generator</h1>
 
-<h1>Couple Travel Hashtags</h1>
-<p>Great for romantic trips, honeymoon travel, and couple adventures.</p>
+<div class="tool-box">
+<input id="i" placeholder="e.g. Couple Travel">
+<button onclick="g()">Generate Hashtags</button>
+<textarea id="o" readonly></textarea>
+</div>
 
-<p><strong>Popular Couple Hashtags:</strong></p>
-<p>
-#coupletravel #travelcouple #couplegoals
-#romanticgetaway #travelwithlove #honeymoontravel
-</p>
+<h2>Related Pages</h2>
+<ul>
+<li><a href="beach-travel-hashtags.html">Beach Travel</a></li>
+<li><a href="bali-travel-hashtags.html">Bali Travel</a></li>
+</ul>
+
+<p><a href="index.html">← Back to Homepage</a></p>
 </div>
 
 <footer>
 <a href="index.html">Home</a> |
 <a href="about.html">About</a> |
-<a href="privacy-policy.html">Privacy</a> |
+<a href="privacy-policy.html">Privacy Policy</a> |
 <a href="terms.html">Terms</a>
 </footer>
 
+<script>
+function g(){
+const v=i.value.trim();
+if(!v)return alert("Enter keyword");
+const k=v.toLowerCase().replace(/\s+/g,"");
+o.value=`#${k}
+#coupletravel
+#travelcouple
+#romanticgetaway
+#travelgoals`;
+}
+</script>
 </body>
 </html>

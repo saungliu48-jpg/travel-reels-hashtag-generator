@@ -7,6 +7,7 @@
 <title>Travel Hashtag Generator for Instagram & Reels (Free Tool)</title>
 
 <meta name="description" content="Free travel hashtag generator for Instagram and Reels. Generate destination and niche-based travel hashtags to boost reach and engagement.">
+<meta name="robots" content="index, follow">
 
 <link rel="canonical" href="https://heroic-concha-6e674e.netlify.app/">
 
@@ -56,7 +57,7 @@ button:hover {
 }
 
 textarea {
-  height: 120px;
+  height: 130px;
 }
 
 ul {
@@ -125,25 +126,26 @@ Perfect for travel bloggers, influencers, tourism pages, and digital nomads.
   <li>Improve Instagram reach and discoverability</li>
   <li>Find relevant travel hashtags instantly</li>
   <li>Save time researching trending hashtags</li>
+  <li>Designed specifically for travel creators</li>
 </ul>
 
 <!-- FAQ -->
 <h2>Frequently Asked Questions</h2>
 
 <h3>Do hashtags still work on Instagram?</h3>
-<p>Yes. Relevant hashtags help Instagram understand your content and show it to the right audience.</p>
+<p>Yes. Relevant hashtags help Instagram understand your content and show it to users interested in similar topics.</p>
 
 <h3>How many hashtags should I use?</h3>
-<p>Use focused and relevant hashtags instead of the maximum limit.</p>
+<p>Using fewer but highly relevant hashtags usually performs better than using the maximum limit.</p>
 
 <h3>Is this travel hashtag generator free?</h3>
-<p>Yes. This tool is completely free and does not require registration.</p>
+<p>Yes. This tool is completely free and requires no sign-up.</p>
 
 <!-- RELATED -->
 <h2>Related Travel Tools</h2>
 <ul>
   <li>
-    <a href="https://idyllic-starship-b50f65.netlify.app/">
+    <a href="https://idyllic-starship-b50f65.netlify.app/" target="_blank">
       AI Travel Image Prompt Generator
     </a>
   </li>
@@ -153,7 +155,7 @@ Perfect for travel bloggers, influencers, tourism pages, and digital nomads.
 
 <footer>
   <p>
-    <a href="index.html">Home</a> |
+    <a href="https://heroic-concha-6e674e.netlify.app/">Home</a> |
     <a href="about.html">About</a> |
     <a href="privacy-policy.html">Privacy Policy</a> |
     <a href="terms.html">Terms</a>
@@ -171,8 +173,8 @@ function generateHashtags() {
   }
 
   const clean = input.toLowerCase().replace(/\s+/g, "");
-  const hashtags = `
-#${clean}
+  const hashtags =
+`#${clean}
 #${clean}travel
 #visit${clean}
 #explore${clean}
@@ -181,10 +183,9 @@ function generateHashtags() {
 #wanderlust
 #instatravel
 #travelreels
-#travelphotography
-`;
+#travelphotography`;
 
-  document.getElementById("output").value = hashtags.trim();
+  document.getElementById("output").value = hashtags;
 }
 </script>
 
@@ -198,14 +199,14 @@ function generateHashtags() {
     "name": "Do hashtags still work on Instagram?",
     "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Yes. Relevant hashtags help Instagram categorize and distribute your content."
+      "text": "Yes. Relevant hashtags help Instagram categorize and distribute content to the right audience."
     }
   },{
     "@type": "Question",
     "name": "Is this travel hashtag generator free?",
     "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Yes, this tool is completely free to use."
+      "text": "Yes, the tool is completely free to use without registration."
     }
   }]
 }

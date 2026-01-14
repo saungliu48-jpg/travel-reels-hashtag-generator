@@ -1,50 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- Main Homepage -->
   <url>
-    <loc>https://heroic-concha-6e674e.netlify.app/index.html</loc>
+    <loc>https://heroic-concha-6e674e.netlify.app/</loc>
     <priority>1.0</priority>
     <changefreq>daily</changefreq>
   </url>
 
-  <!-- Category Pages -->
   <url>
     <loc>https://heroic-concha-6e674e.netlify.app/bali-travel-hashtags.html</loc>
     <priority>0.8</priority>
     <changefreq>weekly</changefreq>
   </url>
+
   <url>
     <loc>https://heroic-concha-6e674e.netlify.app/thailand-travel-hashtags.html</loc>
     <priority>0.8</priority>
     <changefreq>weekly</changefreq>
   </url>
+
   <url>
     <loc>https://heroic-concha-6e674e.netlify.app/solo-travel-hashtags.html</loc>
     <priority>0.8</priority>
     <changefreq>weekly</changefreq>
   </url>
+
   <url>
     <loc>https://heroic-concha-6e674e.netlify.app/beach-travel-hashtags.html</loc>
     <priority>0.8</priority>
     <changefreq>weekly</changefreq>
   </url>
+
   <url>
     <loc>https://heroic-concha-6e674e.netlify.app/budget-travel-hashtags.html</loc>
     <priority>0.8</priority>
     <changefreq>weekly</changefreq>
   </url>
+
   <url>
     <loc>https://heroic-concha-6e674e.netlify.app/couple-travel-hashtags.html</loc>
     <priority>0.8</priority>
     <changefreq>weekly</changefreq>
-  </url>
-
-  <!-- External / Related Tool -->
-  <url>
-    <loc>https://idyllic-starship-b50f65.netlify.app/</loc>
-    <priority>0.6</priority>
-    <changefreq>monthly</changefreq>
   </url>
 
 </urlset>

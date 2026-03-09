@@ -31,4 +31,29 @@
     <changefreq>weekly</changefreq>
   </url>
 
+<url>
+    <loc>https://heroic-concha-6e674e.netlify.app/solo-travel-hashtags.html</loc>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://heroic-concha-6e674e.netlify.app/beach-travel-hashtags.html</loc>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://heroic-concha-6e674e.netlify.app/budget-travel-hashtags.html</loc>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://heroic-concha-6e674e.netlify.app/couple-travel-hashtags.html</loc>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+
 </urlset>
